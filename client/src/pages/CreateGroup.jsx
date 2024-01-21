@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import NavBar from '../components/NavBar';
 
 const CreateGroup = () => {
   const [title, setTitle] = useState('');
@@ -13,7 +14,11 @@ const CreateGroup = () => {
   };
 
   return (
+    <>
+    
+    <NavBar />
     <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
+      
       <form onSubmit={handleSubmit} style={{ width: '400px', padding: '20px', border: '1px solid #ccc', borderRadius: '5px' }}>
         <h2 style={{ textAlign: 'center', marginBottom: '30px'}}><strong>Create Project Group</strong></h2>
         <label style={{ display: 'block', marginBottom: '30px' }}>
@@ -64,6 +69,7 @@ const CreateGroup = () => {
         </button>
       </form>
     </div>
+    </>
   );
 };
 
