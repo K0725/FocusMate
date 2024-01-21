@@ -18,7 +18,7 @@ const styles = {
 
 // create the theme
 const config ={
-  initialColorMode: "dark",
+  initialColorMode: "light",
   useSystemColorMode: false,
 }
 
