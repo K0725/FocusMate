@@ -1,6 +1,12 @@
 import React, { useState } from 'react';
 import NavBar from '../components/NavBar';
 
+/*
+Todo: 
+$ Creating the connection between the submission of the database
+*/
+
+
 const CreateGroup = () => {
   const [title, setTitle] = useState('');
   const [language, setLanguage] = useState('');
