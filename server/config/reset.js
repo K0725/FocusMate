@@ -1,3 +1,8 @@
+import { pool } from './database.js'
+import './dotenv.js'
+import room from '../Controller/room.js'
+
+
 const createTableQuery =  `
     DROP TABLE IF EXISTS rooms;
 
